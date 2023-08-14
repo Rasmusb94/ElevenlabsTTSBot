@@ -1,0 +1,37 @@
+{
+    "_commentNOTE IMPORTANT": "The fields marked with *** are required to run the bot, please follow the installation guide for more information. Also, make sure not to remove or add any quotation marks!",
+    
+    
+    "_***comment1": "The token for your bot, found in the Discord developer portal",
+    "discord_token": "YOURTOKENHERE",
+    
+    "_***comment3": "The ID of your server, found by right clicking the server and copying the ID",
+    "discord_server_id": 000000000000000,
+    
+    "_***comment4": "Your elevenlabs.io API KEY, found on your profile",
+	"elevenlabs_api_key": "YOURAPIKEYHERE",
+    
+    
+    
+    "_comment5": "The prefix that will be used for using commands, default '!'",
+    "command_prefix": "!",
+    
+    "_comment7": "Ya boi has had enough of people writing their commands wrong, set to True to turn that fake face off. Use True or False only.",
+    "rude_bot": "False",
+	
+	"_comment8": "For tts clips on joining and leaving the server, add members to a new role and set the id here, set 'True' or 'False' only. Stability between 0.00 to 1.00",
+    "role_id": 0000000,
+	"leave_join_sounds": "False",
+	"leave_join_stability": 0.05,
+    
+    "_comment9": "Feel free to add more leave and join lines!",
+    "joinmessagesprefix": ["Holy fuck it's ", "O M F G it's ","Is that really ", "I'd like to introduce, ", "Heeeere's ", "The one and only ", "Hey guys, it's me, ", "Fuck sake, it's ", "It's Bloody ", "I have arrived! Says ", "Give it up for "],
+    "joinmessagessuffix": [" I can't fucking believe it", " Everybody clap", " Time to go", " Let's get the party started", " Who invited them?", ", Brilliant", ", Great", " For fuck sake", " Ain't that just great", ", Typical", ", Who could've guessed?", " time to pack it up", " everybody, RUN!"],
+    "leavemessagesprefix": ["There goes ", "Okay see ya ", "Yeah bye ", "See ya later ", "Okay, bye ", "Peace out ", "Byyyyye "],
+    "leavemessagessuffix": [" Just left, finally!", " Disconnected, Glad to be rid of 'em", " Peaced out, About damn time", " Where ya goooin", " is gone! Oh well", " just rage quit! Who tilted 'em?", " just clicked the wrong button!"],
+    "namefollowups": ["!", "!!!", " ", "!!?", "?", "???", "??!", ".", "...", ","],
+    "sentenceendings": ["!!!!!", "!?!?!?", "??!?!", "...?!.??", ".,?!,.", "!.!...", "?!!..??", "!?!..", "...!"],
+    
+    "_comment10": "Set True to enable easter eggs, you can add more in the easter eggs folder",
+    "enable_easter_eggs": "False"
+}
