@@ -1,0 +1,2 @@
+All your generated clips will be stored here.
+To find the latest clips, find the user who requested it with the highest following number.
