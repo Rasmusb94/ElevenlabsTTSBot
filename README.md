@@ -1,11 +1,11 @@
 <h1>ElevenlabsTTSBot</h1>
-A local TTS bot using AI for voice generation with <a href="https://elevenlabs.io/speech-synthesis">ElevenLabs Speech Synthesis</a>!<br>
+A local TTS bot using AI for voice generation with <a href="https://elevenlabs.io/speech-synthesis" target="_blank">ElevenLabs Speech Synthesis</a>!<br>
 <h2>Video guide coming soon!</h2>
 <!---<a href="http://www.youtube.com/watch?feature=player_embedded&v=LBQEurX-MUc" target="_blank">
  <img src="http://img.youtube.com/vi/LBQEurX-MUc/mqdefault.jpg" alt="Video Installation Guide" width="240" height="160" border="10" />
 </a>--->
 <h2>First Things First</h2>
-Download the <a href="https://github.com/Rasmusb94/ElevenlabsTTSBot/releases">latest release of the ElevenlabsTTSBot</a> and extract the folder to your preferred location.
+Download the <a href="https://github.com/Rasmusb94/ElevenlabsTTSBot/releases" target="_blank">latest release of the ElevenlabsTTSBot</a> and extract the folder to your preferred location.
 <h2>Creating Your Bot</h2>
 Go to <a href="https://discord.com/developers/applications">the Discord Developer Portal</a>.
 <ul>
@@ -20,7 +20,7 @@ Replace the {CLIENT_ID} including the brackets with the "Application ID" found u
   <li>Select which server you want to add the bot to.</li>
 </ul>
 <h2>Creating an ElevenLabs Account</h2>
-You are required to make an ElevenLabs account to run this bot. Go to <a href="https://elevenlabs.io/speech-synthesis">ElevenLabs website</a> and create your free account. Free users get a 10,000 character quota per month, which may last anywhere from the entire month to 10 minutes depending on your friend group...
+You are required to make an ElevenLabs account to run this bot. Go to <a href="https://elevenlabs.io/speech-synthesis" target="_blank">ElevenLabs website</a> and create your free account. Free users get a 10,000 character quota per month, which may last anywhere from the entire month to 10 minutes depending on your friend group...
 <h2>Bot Data Information</h2>
 Open the botdata.json file using your text editor of choice. Any notepad should work just fine.
 Note: Make sure NOT TO add OR remove any " or , characters in the file.
@@ -30,7 +30,7 @@ Note: Make sure NOT TO add OR remove any " or , characters in the file.
 If you cannot find the ID of your server, you must go to user settings, scroll to "Advanced" under "App Settings" and enable Developer mode.
 After doing this, simply right click your server and select "Copy Server ID"</li>
   <li>Update the discord_server_id field with the ID of your server</li>
-  <li>Update the elevenlabs_api_key field using the API Key found on your <a href="https://elevenlabs.io/speech-synthesis">Elevenlabs.io</a> profile.
+  <li>Update the elevenlabs_api_key field using the API Key found on your <a href="https://elevenlabs.io/speech-synthesis" target="_blank">Elevenlabs.io</a> profile.
   <li>(Optional) Feel free to edit the other fields but make sure to keep the format as is</li>
 </ul>
 <h2>Dependencies</h2>
@@ -45,7 +45,7 @@ After doing this, simply right click your server and select "Copy Server ID"</li
 <h3>Python</h3>
 Should work with Python 3.10 + but only tested with 3.11
 <ul>
-  <li>Go to <a href="https://python.org/downloads/">the Python website</a> and download the latest version of Python 3.11</li>
+  <li>Go to <a href="https://python.org/downloads/" target="_blank">the Python website</a> and download the latest version of Python 3.11</li>
   <li>When installing, make sure to tick the "Add python.exe to PATH" box, or otherwise do the same as you did for FFMpeg by manually adding Python to path</li>
 </ul>
 <h3>Python Libraries</h3>
@@ -85,3 +85,7 @@ The bot is also able to welcome and say goodbye to people joining and leaving vo
   <li>Set the "leave_join_sounds" line to "True"</li>
   <li>(Optional) Change the stability to anything between 0.00 and 1.00 depending on preference! You can also add or remove bits that the bot may say using the "joinmessagesprefix" list etc.</li>
 </ul>
+
+<h2>Final Note</h2>
+I am in no way associated with ElevenLabs or their products, this is simply a bot I made for fun for me and my friends to enjoy that I've released to the public. It's also completely free of charge, however 10,000 characters may not be enough for you if the bot gets heavily used. If so, I'd recommend subscribing to ElevenLabs for an increased monthly quota.
+Have fun!
