@@ -6,7 +6,7 @@
     "discord_token": "YOURTOKENHERE",
     
     "_***comment3": "The ID of your server, found by right clicking the server and copying the ID",
-    "discord_server_id": 000000000000000,
+    "discord_server_id": 1000000000000000,
     
     "_***comment4": "Your elevenlabs.io API KEY, found on your profile",
 	"elevenlabs_api_key": "YOURAPIKEYHERE",
@@ -20,7 +20,7 @@
     "rude_bot": "False",
 	
 	"_comment8": "For tts clips on joining and leaving the server, add members to a new role and set the id here, set 'True' or 'False' only. Stability between 0.00 to 1.00",
-    "role_id": 0000000,
+    "role_id": 10000000,
 	"leave_join_sounds": "False",
 	"leave_join_stability": 0.05,
     
