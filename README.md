@@ -1,9 +1,9 @@
 <h1>ElevenlabsTTSBot</h1>
 A local TTS bot using AI for voice generation with <a href="https://elevenlabs.io/speech-synthesis" target="_blank">ElevenLabs Speech Synthesis</a>!<br>
-<h2>Video guide coming soon!</h2>
-<!---<a href="http://www.youtube.com/watch?feature=player_embedded&v=LBQEurX-MUc" target="_blank">
- <img src="http://img.youtube.com/vi/LBQEurX-MUc/mqdefault.jpg" alt="Video Installation Guide" width="240" height="160" border="10" />
-</a>--->
+<h2>Video Installation Guide</h2>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VltJszc6w7" target="_blank">
+ <img src="http://img.youtube.com/vi/VltJszc6w7/mqdefault.jpg" alt="Video Installation Guide" width="240" height="160" border="10" />
+</a>
 <h2>First Things First</h2>
 Download the <a href="https://github.com/Rasmusb94/ElevenlabsTTSBot/releases" target="_blank">latest release of the ElevenlabsTTSBot</a> and extract the folder to your preferred location.
 <h2>Creating Your Bot</h2>
