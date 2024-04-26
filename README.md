@@ -52,7 +52,7 @@ Should work with Python 3.10 + but only tested with 3.11
 <h4>Installing using Requirements.txt</h4>
 <ul>
  <li>Navigate to the ElevenlabsTTSBot folder in your CLI of choice (such as Powershell)</li>
- <li>_Tip: In Windows you can right click whilst in the folder and select "Open in Terminal"_</li>
+ <li>Tip: In Windows you can right click whilst in the folder and select "Open in Terminal"</li>
  <li>Type "pip install -r requirements.txt"</li>
 </ul>
 <h4>Installing the packages separately</h4>
