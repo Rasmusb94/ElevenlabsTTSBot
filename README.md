@@ -49,12 +49,18 @@ Should work with Python 3.10 + but only tested with 3.11
   <li>When installing, make sure to tick the "Add python.exe to PATH" box, or otherwise do the same as you did for FFMpeg by manually adding Python to path</li>
 </ul>
 <h3>Python Libraries</h3>
+<h4>Installing using Requirements.txt</h4>
+<ul>
+ <li>Navigate to the ElevenlabsTTSBot folder in your CLI of choice (such as Powershell)</li>
+ <li>*Note:* In Windows you can right click whilst in the folder and select "Open in Terminal"</li>
+ <li>Type "pip install -r requirements.txt"</li>
+</ul>
+<h4>Installing the packages separately</h4>
 <ul>
   <li>Open Windows PowerShell as an Administrator</li>
   <li>Type "pip install discord"</li>
   <li>Type "pip install mutagen"</li>
   <li>Type "pip install PyNaCl"</li>
-  <li>Type "pip install elevenlabs"</li>
 </ul>
 This should install the required libraries to Python, if it does not work please check your Python installation completed correctly, or use another method such as choco to install the libraries.
 
@@ -89,3 +95,13 @@ The bot is also able to welcome and say goodbye to people joining and leaving vo
 <h2>Final Note</h2>
 I am in no way associated with ElevenLabs or their products, this is simply a bot I made for fun for me and my friends to enjoy that I've released to the public. It's also completely free of charge, however 10,000 characters may not be enough for you if the bot gets heavily used. If so, I'd recommend subscribing to ElevenLabs for an increased monthly quota.
 Have fun!
+
+<h2>Changelog</h2>
+<h4>Version 1.1</h4>
+<ul>
+<li>Improved performance of the main bot.py file</li>
+<li>Refactoring of code</li>
+<li>Updated voice request for the new ElevenLabs API</li>
+<li>Fixed crashes on bot startup</li>
+<li>Other QOL boring code stuff</li>
+</ul>
