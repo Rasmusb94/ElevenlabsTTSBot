@@ -98,10 +98,10 @@ Have fun!
 
 <h2>Frequently Asked Questions</h2>
 <h4>Q: The bot.py file opens my command prompt then instantly closes</h4>
-<h4>A: Open Powershell or CMD and navigate to the ElevenlabsTTSBot folder. (Right click in the folder and select "Open in Terminal"). Type "Python.exe bot.py", or "Python3.exe bot.py". This should load the file properly. 
- Alternatively, you can run the code in an IDE such as VS Code.</h4>
+A: Open Powershell or CMD and navigate to the ElevenlabsTTSBot folder. (Right click in the folder and select "Open in Terminal"). Type "Python.exe bot.py", or "Python3.exe bot.py". This should load the file properly. 
+ Alternatively, you can run the code in an IDE such as VS Code.
 <h4>Q: How much does this bot cost to use?</h4>
-<h4>A: Nothing! The only potential cost is increasing your monthly quota with Elevenlabs.</h4>
+A: Nothing! The only potential cost is increasing your monthly quota with Elevenlabs.
 
 <h2>Changelog</h2>
 <h4>Version 1.1</h4>
