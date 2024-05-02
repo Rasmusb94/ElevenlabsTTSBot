@@ -1,5 +1,19 @@
 import random
+import json
 import functions.sendBotMessage as sendBotMessage
+
+class CustomVoice:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+
+f = open('customvoices.json')
+data = json.load(f)
+
+customVoices = []
+for voice in data:
+    customVoice = CustomVoice(voice["name"], voice["id"])
+    customVoices.append(customVoice)
 
 async def getRandomVoice(voicedata):
     randommax = len(voicedata)
@@ -40,7 +54,15 @@ async def setStability(stability):
     else:
         return str(stablecheck / 100)
 
-
+async def getCustomVoice(name):
+    foundMatch = False
+    for customVoice in customVoices:
+        if name.capitalize() == customVoice.name.capitalize():
+            foundMatch = True
+            return customVoice.name.capitalize(), customVoice.id
+    if foundMatch == False:
+        return "", ""
+        
 async def getRandomStability():
     stability = round(random.uniform(0.01, 1.00),2)
     print(f"Random stability: {stability}")

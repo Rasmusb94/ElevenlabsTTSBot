@@ -79,7 +79,7 @@ async def _random(ctx, *message):
             errormessage = await getBotResponse.getBotResponse(botresponse)
             await sendErrorMessage.sendValueErrorMessage(errormessage, ctx, error)
 
-@bot.command(pass_context=True, name="tts", help="Use tts Voice message, example: " + PREFIX + "'tts Adam 50 Hello World' param: <Voice or random> <Stability 1-100> <Message>")
+@bot.command(pass_context=True, name="tts", help=f"Use tts Voice message, example: '{PREFIX}tts Adam 50 Hello World' param: <Voice or random> <Stability 1-100> <Message>")
 async def _tts(ctx, 
                name: str = commands.parameter(description="The name of the voice you want to use"), 
                stability: str = commands.parameter(description="The stability of the voice, a number between 0-100"), 
@@ -90,6 +90,34 @@ async def _tts(ctx,
             botmessage = " ".join(message[:])
 
             ttsvoice, voiceid = await getBotVoice.checkRandomVoice(name.capitalize(), voicedata, ctx)
+            stability = await getBotVoice.setStability(stability)
+            response = await sendRequest.getSoundclip(voiceid, botmessage, TTSMODEL, stability)
+            audiofile = await getFilePath.getFilePath(ctx.message.author.name, response)
+
+            await playVoice.playVoice(ttsvoice, botmessage, ctx.message.author.name, voice, audiofile)
+            await sendBotMessage.sendPlayingMessage(ctx, ttsvoice, str(stability), botmessage)
+
+        except (ValueError, UnboundLocalError) as error:
+            botresponse = "valerror"
+            errormessage = await getBotResponse.getBotResponse(botresponse)
+            await sendErrorMessage.sendValueErrorMessage(errormessage, ctx, error)
+        except Exception as error:
+            botresponse = ""
+            errormessage = await getBotResponse.getBotResponse(botresponse)
+            await sendErrorMessage.sendValueErrorMessage(errormessage, ctx, error)
+
+@bot.command(pass_context=True, name="custom", help=f"Custom voice tts, example: '{PREFIX}custom Adam 50 Hello World' param: <Voice or random> <Stability 1-100> <Message>")
+async def _custom(ctx, 
+               name: str = commands.parameter(description="The name of the voice you want to use"), 
+               stability: str = commands.parameter(description="The stability of the voice, a number between 0-100"), 
+               *message):
+    if (voice := await connectToVoice.connectToVoice(ctx, bot)) is not None:
+
+        try:
+            botmessage = " ".join(message[:])
+            ttsvoice, voiceid = await getBotVoice.getCustomVoice(name)
+            if ttsvoice == "" or voiceid == "":
+                raise ValueError("Couldn't find a custom voice with the requested name. Please make sure the voice has been added to the customvoices.json file and the VoiceLabs library on your Elevenlabs profile.")
             stability = await getBotVoice.setStability(stability)
             response = await sendRequest.getSoundclip(voiceid, botmessage, TTSMODEL, stability)
             audiofile = await getFilePath.getFilePath(ctx.message.author.name, response)
