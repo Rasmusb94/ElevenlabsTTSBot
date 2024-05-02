@@ -92,6 +92,18 @@ The bot is also able to welcome and say goodbye to people joining and leaving vo
   <li>(Optional) Change the stability to anything between 0.00 and 1.00 depending on preference! You can also add or remove bits that the bot may say using the "joinmessagesprefix" list etc.</li>
 </ul>
 
+<h2>Using Custom Voices</h2>
+Follow these steps to use custom voices:
+<ul>
+ <li>Go to [Elevenlabs Voice Library](https://elevenlabs.io/app/voice-library)</li>
+ <li>Click "Add to VoiceLab" on your preferred custom voice</li>
+ <li>Select the "VoiceLab" tab</li>
+ <li>Copy the voice ID by clicking the button that says "ID"</li>
+ <li>Paste the ID in the customvoices.json file with your name of choice (the name can be anything)</li>
+ <li>Use the "custom" command to use a custom voice with the bot</li>
+ <li>NOTE: You can only use custom voices added to your VoiceLab list, (max 3 by default)</li>
+</ul>
+
 <h2>Final Note</h2>
 I am in no way associated with ElevenLabs or their products, this is simply a bot I made for fun for me and my friends to enjoy that I've released to the public. It's also completely free of charge, however 10,000 characters may not be enough for you if the bot gets heavily used. If so, I'd recommend subscribing to ElevenLabs for an increased monthly quota.
 Have fun!
@@ -108,6 +120,8 @@ A: Nothing! The only potential cost is increasing your monthly quota with Eleven
 <ul>
 <li>Improved performance of the main bot.py file</li>
 <li>Refactoring of code</li>
+<h5>1.1.1</h5>
+Added custom voice functionality
 <li>Updated voice request for the new ElevenLabs API</li>
 <li>Fixed crashes on bot startup</li>
 <li>Other QOL boring code stuff</li>
