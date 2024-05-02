@@ -96,6 +96,13 @@ The bot is also able to welcome and say goodbye to people joining and leaving vo
 I am in no way associated with ElevenLabs or their products, this is simply a bot I made for fun for me and my friends to enjoy that I've released to the public. It's also completely free of charge, however 10,000 characters may not be enough for you if the bot gets heavily used. If so, I'd recommend subscribing to ElevenLabs for an increased monthly quota.
 Have fun!
 
+<h2>Frequently Asked Questions</h2>
+<h4>Q: The bot.py file opens my command prompt then instantly closes</h4>
+<h4>A: Open Powershell or CMD and navigate to the ElevenlabsTTSBot folder. (Right click in the folder and select "Open in Terminal"). Type "Python.exe bot.py", or "Python3.exe bot.py". This should load the file properly. 
+ Alternatively, you can run the code in an IDE such as VS Code.</h4>
+<h4>Q: How much does this bot cost to use?</h4>
+<h4>A: Nothing! The only potential cost is increasing your monthly quota with Elevenlabs.</h4>
+
 <h2>Changelog</h2>
 <h4>Version 1.1</h4>
 <ul>
