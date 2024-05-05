@@ -120,9 +120,9 @@ A: Nothing! The only potential cost is increasing your monthly quota with Eleven
 <ul>
 <li>Improved performance of the main bot.py file</li>
 <li>Refactoring of code</li>
-<h5>1.1.1</h5>
-Added custom voice functionality
 <li>Updated voice request for the new ElevenLabs API</li>
 <li>Fixed crashes on bot startup</li>
 <li>Other QOL boring code stuff</li>
 </ul>
+<h5>1.1.1</h5>
+Added custom voice functionality
